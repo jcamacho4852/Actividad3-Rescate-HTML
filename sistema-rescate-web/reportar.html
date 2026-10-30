@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportar Nuevo Rescate - Sistema de Rescate Animal</title>
+</head>
+<body>
+    <header>
+        <h1>M&oacute;dulo de Registro de Rescates</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Rescate</a></li>
+            <li><a href="rescates.html">Cat&aacute;logo y Reporte de Rescates</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de Ingreso de Animal Rescatado</h2>
+            <p>Complete los campos obligatorios para registrar un nuevo rescate en el sistema.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Informaci&oacute;n General del Animal</legend>
+                    
+                    <p>
+                        <label for="nombre">Nombre provisional:</label><br>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Firulais o Sin nombre">
+                    </p>
+
+                    <p>
+                        <label for="especie">Especie:</label><br>
+                        <select id="especie" name="especie" required>
+                            <option value="">Seleccione una especie</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="ave">Ave</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="raza">Raza:</label><br>
+                        <input type="text" id="raza" name="raza" required placeholder="Ej. Mestizo">
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad aproximada (a&ntilde;os):</label><br>
+                        <input type="number" id="edad" name="edad" min="0" max="25" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Rescate y Salud</legend>
+
+                    <p>
+                        <label for="zona">Zona o ubicaci&oacute;n del rescate:</label><br>
+                        <input type="text" id="zona" name="zona" required placeholder="Ej. Santa Ana, Manab&iacute;">
+                    </p>
+
+                    <p>
+                        <label for="estadoSalud">Estado de salud inicial:</label><br>
+                        <textarea id="estadoSalud" name="estadoSalud" rows="4" cols="40" required placeholder="Describa lesiones, estado nutricional o diagn&oacute;sticos preliminares..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Registrar Ingreso</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad T&eacute;cnica de Manab&iacute; - Desarrollo de Sistemas Inform&aacute;ticos</p>
+    </footer>
+</body>
+</html>
+
